@@ -1,0 +1,15 @@
+{
+  "id": "habits",
+  "name": "Habits",
+  "description": "Daily habit tracking with streaks. The first route-owning reference plugin, extracted to prove the GitHub ingest loop.",
+  "category": "Productivity",
+  "tier": "public",
+  "twinPluginApi": "1",
+  "author": "atlibjorgvins",
+  "collections": ["habit", "habit_entry"],
+  "routes": ["/tools/habits"],
+  "install": {
+    "target": "src/lib/plugins/habits",
+    "note": "Cloned into twin's plugin directory by scripts/fetch-plugins.sh, then compiled into the build. Build-time, no runtime loader (see twin/docs/plugin-contract.md)."
+  }
+}
