@@ -9,7 +9,8 @@
   "collections": ["habit", "habit_entry"],
   "routes": ["/tools/habits"],
   "install": {
-    "target": "src/lib/plugins/habits",
-    "note": "Cloned into twin's plugin directory by scripts/fetch-plugins.sh, then compiled into the build. Build-time, no runtime loader (see twin/docs/plugin-contract.md)."
+    "lib": "src/lib/plugins/habits",
+    "routes": "src/routes (this repo's routes/ subtree is copied in verbatim)",
+    "note": "fetch-plugins.sh clones this repo: routes/ is copied into twin's src/routes/, everything else into src/lib/plugins/habits/. Build-time, no runtime loader (see twin/docs/plugin-contract.md). This plugin now ships its own /tools/habits page under routes/."
   }
 }
